@@ -60,7 +60,7 @@
 		## Vimの起動
 
 		```php
-		vim
+		vim (ファイル名)
 		```
 		--
 		## チュートリアルの起動
@@ -89,24 +89,24 @@
 		--
 		### カーソルの移動
 
-		+ h, j, k, l … ←, ↓, ↑, →
-		+ ^, $ … 行の先頭, 最後
-		+ w, e, b … 単語ごとに移動
-		+ {, } … 段落ごとに移動
-		+ % … 対応するかっこ
-		+ Shift+h, Shift+m, Shift+l … 上, 中, 下
-		+ f + 飛びたい文字
+		+ h, j, k, l … ←, ↓, ↑, → <!-- .element: class="fragment highlight-current-red" -->
+		+ ^, $ … 行の先頭, 最後 <!-- .element: class="fragment highlight-current-red" -->
+		+ w, e, b … 単語ごとに移動 <!-- .element: class="fragment highlight-current-red" -->
+		+ {, } … 段落ごとに移動 <!-- .element: class="fragment highlight-current-red" -->
+		+ % … 対応するかっこ <!-- .element: class="fragment highlight-current-red" -->
+		+ Shift+h, Shift+m, Shift+l … 上, 中, 下 <!-- .element: class="fragment highlight-current-red" -->
+		+ f + 飛びたい文字 <!-- .element: class="fragment highlight-current-red" -->
 		--
 		## 画面の移動
 
-		+ Ctrl+e, Ctrl+y … 一行ずつ上, 下
-		+ Ctrl+d, Ctrl+u … 半画面ずつ上, 下
-		+ Ctrl+f, Ctrl+b … 一画面ずつ上, 下
-		+ zt, zz, zb … カーソルの位置を上, 中, 下
-		+ gg, G … 一番上, 下の行へ
-		+ Ctrl+o, Ctrl+i … 直前, 直後にいたカーソルの位置に移動 <!-- .element: class="fragment" data-fragment-index="1" --><br><br>
+		+ Ctrl+e, Ctrl+y … 一行ずつ上, 下 <!-- .element: class="fragment highlight-current-red" data-fragment-index="1" -->
+		+ Ctrl+d, Ctrl+u … 半画面ずつ上, 下 <!-- .element: class="fragment highlight-current-red" data-fragment-index="2" -->
+		+ Ctrl+f, Ctrl+b … 一画面ずつ上, 下 <!-- .element: class="fragment highlight-current-red" data-fragment-index="3" -->
+		+ zt, zz, zb … カーソルの位置を上, 中, 下 <!-- .element: class="fragment highlight-current-red" data-fragment-index="4" -->
+		+ gg, G … 一番上, 下の行へ <!-- .element: class="fragment highlight-current-red" data-fragment-index="5" -->
+		+ Ctrl+o, Ctrl+i … 直前, 直後にいたカーソルの位置に移動 <!-- .element: class="fragment highlight-current-red" data-fragment-index="6" --><br><br>
 
-		数字と組み合わせられる！！ <!-- .element: class="fragment" data-fragment-index="2" -->
+		数字と組み合わせられる！！ <!-- .element: class="fragment highlight-current-red" data-fragment-index="7" -->
 		---
 		## Vimにはモードがある
 		主に使うモードは4つ
@@ -118,10 +118,10 @@
 		--
 		## 挿入モードにするコマンド
 
-		+ <span style="color:orange">i</span> … カーソルの位置から挿入モード		
-		+ a … カーソルの次の文字から挿入モード		 
-		+ o … カーソルの位置から改行をして挿入モード	  
-		+ O … カーソルの位置から上に改行をして挿入モード  
+		+ <span style="color:orange">i</span> … カーソルの位置から挿入モード
+		+ a … カーソルの次の文字から挿入モード	
+		+ o … カーソルの位置から改行をして挿入モード	
+		+ O … カーソルの位置から上に改行をして挿入モード
 		--
 		## 文字列の編集
 
@@ -131,7 +131,7 @@
 		+ <span style="color:blue">D</span> … カーソル以降を削除
 		+ <span style="color:red">dd</span> … 一行削除
 		+ s … <span style="color:yellow">x</span> + <span style="color:orange">i</span>
-		+ S … <span style="color:red">dd</span> + <span style="color:orange">i</span>
+		+ S … <span style="color:red">dd</span> + <span style="color:orange">i</span> 
 		+ c … <span style="color:pink">d</span> + <span style="color:orange">i</span>
 		+ C … <span style="color:blue">D</span> + <span style="color:orange">i</span>
 		--
@@ -141,16 +141,16 @@
 		--
 		## undo
 
-		+ u … undo
-		+ Ctrl + r … undoの取り消し
+		+ u … undo <!-- .element: class="fragment highlight-current-red" -->
+		+ Ctrl + r … undoの取り消し <!-- .element: class="fragment highlight-current-red" -->
 		--
 		## ヤンク
 
-		+ y + 指定 … ヤンクする
-		+ yy … 一行ヤンク
-		+ p … 貼り付ける
+		+ y + 指定 … ヤンクする <!-- .element: class="fragment highlight-current-red" -->
+		+ yy … 一行ヤンク <!-- .element: class="fragment highlight-current-red" -->
+		+ p … 貼り付ける <!-- .element: class="fragment highlight-current-red" --><br><br>
 
-		削除した文字は自動的にヤンクされる
+		<strong><em>削除した文字は自動的にヤンクされる</em></strong> <!-- .element: class="fragment highlight-current-red" -->
 		---
 		## Vimにはモードがある
 		主に使うモードは4つ
@@ -158,7 +158,7 @@
 		1. ノーマルモード
 		2. 挿入モード
 		3. ビジュアルモード <!-- .element: class="fragment highlight-red" data-fragment-index="1" -->
-		4. コマンドラインモード
+		4. コマンドラインモード<br><br>
 
 		v + 指定 <!-- .element: class="fragment" data-fragment-index="2" -->
 		
@@ -177,11 +177,26 @@
 		q:	 … コマンドの履歴の表示 
 		```
 		--
-		+ :r<span class="fragment fade-out">ead</span><span class="fragment" data-fragment-index="1">!</span> + ファイル名     … <span class="fragment" data-fragment-index="2">強制的に</span>ファイルの読み込み
-		+ :w<span class="fragment fade-out">rite</span><span class="fragment" data-fragment-index="3">!</span> + ファイル名    … <span class="fragment" data-fragment-index="4">強制的に</span>ファイル名で保存
-		+ :e<span class="fragment fade-out">dit</span><span class="fragment" data-fragment-index="5">!</span> + ファイル名     … <span class="fragment" data-fragment-index="6">強制的に</span>ファイル名を読み込み
-		+ :q<span class="fragment" data-fragment-index="7">!</span>	    … <span class="fragment" data-fragment-index="8">強制的に</span>Vimの終了
+		+ :r<span class="fragment fade-out">ead</span><span class="fragment highlight-red" data-fragment-index="1">!</span> + ファイル名     … <span class="fragment highlight-red" data-fragment-index="1">強制的に</span>ファイルの読み込み
+		+ :w<span class="fragment fade-out">rite</span><span class="fragment highlight-red" data-fragment-index="1">!</span> + ファイル名    … <span class="fragment highlight-red" data-fragment-index="1">強制的に</span>ファイル名で保存
+		+ :e<span class="fragment fade-out">dit</span><span class="fragment highlight-red" data-fragment-index="1">!</span> + ファイル名     … <span class="fragment highlight-red" data-fragment-index="1">強制的に</span>ファイル名を読み込み
+		+ :q<span class="fragment highlight-red" data-fragment-index="1">!</span>	    … <span class="fragment highlight-red" data-fragment-index="1">強制的に</span>Vimの終了
 		+ :h<span class="fragment fade-out">elp</span> + コマンド … コマンドのヘルプ
+		--
+		## エンコーディングを変えるには
+
+		```php
+		:set enc=エンコーディングの指定
+		:e ++enc=エンコーディングの指定
+		```
+
+		のどちらかで
+
+		指定のエンコーディングで保存したい場合には
+
+		```php
+		:set fenc=エンコーディングの指定
+		```
 		--
 		## 検索
 
@@ -189,7 +204,7 @@
 
 		?検索語句 … 上に検索
 
-		* … カーソル上にある単語の検索
+		\* … カーソル上にある単語の検索
 
 		n … 次の検索語句へ
 
@@ -246,13 +261,12 @@
 		git init
 		```
 		--
+		## add
+
 		```php
 		git status
 		git add 管理したいファイル名
 		git status
-		git commit -m "コメント"
-		git status
-		git log
 		```
 		--
 		## 差分
@@ -261,23 +275,37 @@
 		git diff ファイル名
 		```
 		--
-		## 戻すには
+		## コミット
 
 		```php
+		git log
+		git commit -m "コメント"
+		git status
+		git log
+		```
+		--
+		## 戻すには
+
+		addされたものに戻すには
+		```php
 		git checkout ファイル名
+		```
+
+		commitされたものに戻すには
+		```php
 		git reset HEAD 
 		```
 
-		以上
+		以上 <!-- .element: class="fragment" data-fragment-index="1" -->
 		--
 		## Gitについてもっと知りたい！！
 
-		[もっと早く知りたかった！ Gitが鬼のようにわかるスライド厳選7選](http://www.find-job.net/startup/7-git-slides) <!-- .element: class="fragment" data-fragment-index="1" -->
+		[もっと早く知りたかった！ Gitが鬼のようにわかるスライド厳選7選](http://www.find-job.net/startup/7-git-slides) がおすすめ <!-- .element: class="fragment" data-fragment-index="1" -->
 		---
 		## 参考までに
 
 		+ [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb) 
-		+ vimdiffで差分もとれる 
+		+ vimdiff
 		+ [Github](https://github.com/) 
 		---
 		以上です
