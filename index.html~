@@ -76,6 +76,7 @@
 		---
 		## .vimrcの編集
 
+		まず、".vimrc"または"_vimrc"を探してvimで編集
 		```php
 		vim .vimrc
 		:r $VIMRUNTIME/vimrc_example.vim
@@ -254,7 +255,7 @@
 		+ Basicmouse.c <!-- .element: class="fragment" data-fragment-index="1" -->
 		+ Basicmouse(1).c <!-- .element: class="fragment" data-fragment-index="2" -->
 		+ Basicmouse(2).c <!-- .element: class="fragment" data-fragment-index="3" -->
-		+ Basicmouse(3).c <!-- .element: class="fragment" data-fragment-index="4" -->
+		+ Basicmouse(3).c <!-- .element: class="fragment" data-fragment-index="4" --><br>
 		… <!-- .element: class="fragment" data-fragment-index="4" -->
 
 		バージョンを管理するためのシステム <!-- .element: class="fragment" data-fragment-index="5" -->
